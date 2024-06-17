@@ -1,2 +1,2 @@
 # AHK_DefaultScripts
-Routine scripts for use on all systems
+These are the default scripts for use on all my systems
