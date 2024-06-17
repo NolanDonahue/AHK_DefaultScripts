@@ -13,10 +13,15 @@ Table of Contents
 #Include ".\Bulk.ahk"
 
 /* 1. Run Shortcut Menu */
-Run "..\LNCHR-pub-master\LNCHR-Main.ahk"
+Run ".\LNCHR-pub-master\LNCHR-Main.ahk"
 
 /* 2. Run Bulk Script */
 v2_Auto_Updater.run_once ;check for AHK updates
 
 /* 3. Run Launch Gui */
 Run ".\GuiLauncher.ahk"
+
+/*
+;Automatically create a script in the startup folder with a shortcut to this AHK script
+FileCreateShortcut, %A_ScriptFullPath%, %A_Startup%\startupShortcut.lnk
+*/
